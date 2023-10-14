@@ -316,34 +316,30 @@
             </div>
         </div>
     </div>
-    <!--Modal-Buy-Ticket-->
+
+
+    <!--Modal-->
     <script>
-        //đặt biến để gọi cái nút từ file html qua js
         const buyBtns = document.querySelectorAll('.js-buy-ticket')
         const modal = document.querySelector('.js-modal')
         const modalClose = document.querySelector('.js-modal-close')
-        const modalContainer = document.querySelector('.js-modal-container') // hãy quay lại web khi nhấn ngoài vùng container thì modal cũng ẩn
+        const modalContainer = document.querySelector('.js-modal-container')
 
-        //Hàm hiển thị modal ( nhớ là phải thêm class .modal.open{display: flex;} vào css)
         function showBuyTickets() {
             modal.classList.add('open')
         }
 
-        //bởi vì có tận 3 nút buy ticket nên phải dùng vòng lặp
         for (const buyBtn of buyBtns) {
-            //hàm addeventlistener có nghĩa là lắng nghe người dùng, tức khi click vào sẽ thực thi hàm nào đó
+
             buyBtn.addEventListener('click', showBuyTickets)
         }
 
-        //hàm ẩn modal
         function hideBuyTickets() {
             modal.classList.remove('open')
         }
 
-        //bởi vì chỉ có 1 nút close nên ko cần phải chạy vòng lặp
         modalClose.addEventListener('click', hideBuyTickets)
 
-        //2 hàm dưới đây sẽ giúp cho việc click ngoài vùng modal cũng sẽ ẩn được modal
         modal.addEventListener('click', hideBuyTickets)
         modalContainer.addEventListener('click', function (event) {
             event.stopPropagation()
