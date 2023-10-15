@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>ABC HOME PAGE</title>
+    <title>EcoEarns</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -26,8 +26,8 @@
 
         <img style="width: 1728px; height: 487px; left: 0px; top: 102px; position: absolute; box-shadow: 50px 50px 50px; filter: blur(50px)"
             src="assets/thanh-tuu 2.png" />
-            
-            <div
+
+        <div
             style="padding-left: 64px; padding-right: 64px; padding-top: 40px; padding-bottom: 40px; left: 102px; top: 679px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex">
             <div id="map" style="width:100%;height:400px;"></div>
             <div
@@ -90,7 +90,7 @@
                                             <img class="rounded-circle shadow-1-strong me-3"
                                                 src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(20).webp"
                                                 alt="avatar" />
-                                            <a href="Javascript:void(0)" class="username">mindyy_def</a>
+                                            <a href="Javascript:void(0)" class="username">Trang Nguyễn</a>
                                             <div class="rating d_flex">
                                                 <a class="fa fa-star"></a>
                                                 <a class="fa fa-star"></a>
@@ -104,12 +104,7 @@
                                         <span class="comment-time">2 ngày trước</span>
                                     </div>
                                     <div class="col-md-12">
-                                        <p class="comment-content">Contrary to popular belief, Lorem Ipsum is not simply
-                                            random text.
-                                            It has roots in a piece of classical Latin literature from 45 BC, making
-                                            it over 2000 years old. Richard McClintock, a Latin professor at
-                                            Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
-                                            words, consectetur, from a Lorem Ipsum passage, and going through the cites.
+                                        <p class="comment-content">Hoạt động rất ý nghĩa, nên tham gia nha mn ơi!
                                         </p>
                                         <i class="heart fa fa-heart" style="font-size: 25px;"></i>
                                     </div>
@@ -125,7 +120,7 @@
                                             <img class="rounded-circle shadow-1-strong me-3"
                                                 src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(20).webp"
                                                 alt="avatar" />
-                                            <a href="Javascript:void(0)" class="username">mindyy_def</a>
+                                            <a href="Javascript:void(0)" class="username">Ngân Võ</a>
                                             <div class="rating d_flex">
                                                 <a class="fa fa-star"></a>
                                                 <a class="fa fa-star"></a>
@@ -139,12 +134,8 @@
                                         <span class="comment-time">2 ngày trước</span>
                                     </div>
                                     <div class="col-md-12">
-                                        <p class="comment-content">Contrary to popular belief, Lorem Ipsum is not simply
-                                            random text.
-                                            It has roots in a piece of classical Latin literature from 45 BC, making
-                                            it over 2000 years old. Richard McClintock, a Latin professor at
-                                            Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
-                                            words, consectetur, from a Lorem Ipsum passage, and going through the cites.
+                                        <p class="comment-content">Tích cực tham gia để cùng chung tay bảo vệ môi trường
+                                            sống nhé S2
                                         </p>
                                         <i class="heart fa fa-heart" style="font-size: 25px;"></i>
                                     </div>
@@ -169,7 +160,8 @@
             onmouseover="this.style.color='green';" onmouseout="this.style.color='black';">
             Tổ chức</div>
         <div style="width: 136px; height: 32px; left: 489px; top: 43px; position: absolute; color: black;font-size: 20px; font-family: Raleway, sans-serif; font-weight: 600; word-wrap: break-word"
-            onmouseover="this.style.color='green';" onmouseout="this.style.color='black';">
+            onmouseover="this.style.color='green';" onmouseout="this.style.color='black';"
+            onclick="location.href='ListEvent.html';">
             Hoạt động</div>
         <div style="width: 136px; height: 32px; left: 806px; top: 43px; position: absolute;color: black;font-size: 20px; font-family: Raleway, sans-serif; font-weight: 600; word-wrap: break-word"
             onmouseover="this.style.color='green';" onmouseout="this.style.color='black';"
@@ -374,17 +366,19 @@
 <script>
     function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
-            center: { lat: 10.762536872673731, lng: 106.68232551166415 }, 
-            zoom: 12 
+            center: { lat: 10.762536872673731, lng: 106.68232551166415 },
+            zoom: 12
         });
 
         var marker = new google.maps.Marker({
-            position: { lat: 10.762536872673731, lng: 106.68232551166415 }, 
-            map: map, 
-            title: 'Địa điểm' 
+            position: { lat: 10.762536872673731, lng: 106.68232551166415 },
+            map: map,
+            title: 'Địa điểm'
         });
     }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeOS7IcZeQdZrFqQOWnddYHwki4xDCCBI&callback=initMap"></script>></script>
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeOS7IcZeQdZrFqQOWnddYHwki4xDCCBI&callback=initMap"></script>
+></script>
 
 </html>
