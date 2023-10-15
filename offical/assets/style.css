@@ -24,7 +24,7 @@
     animation: modalFadeIn ease 0.4s;
 }
 
-.modal-header {
+.modal-header-r {
     background-color: #009688;
     height: 130px;
     display: flex;
