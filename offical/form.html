@@ -26,8 +26,10 @@
 
         <img style="width: 1728px; height: 487px; left: 0px; top: 102px; position: absolute; box-shadow: 50px 50px 50px; filter: blur(50px)"
             src="assets/thanh-tuu 2.png" />
-        <div
+            
+            <div
             style="padding-left: 64px; padding-right: 64px; padding-top: 40px; padding-bottom: 40px; left: 102px; top: 679px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex">
+            <div id="map" style="width:100%;height:400px;"></div>
             <div
                 style="width: 1312px; height: 48px; color: #242565; font-size: 36px; font-family: Raleway, sans-serif; font-weight: 700; word-wrap: break-word">
                 Giới thiệu</div>
@@ -196,7 +198,7 @@
         </div>
     </div>
     <img style="width: 38px; height: 38px; left: 1535px; top: 38px; position: absolute; border-radius: 50px; border: 1px #5CB874 solid"
-        src="/EcoEarns-200-OK-FE/offical/assets/image 6.png" />
+        src="../offical/assets/image6.png" />
     <div
         style="padding: 10px; left: 1570px; top: 35px; position: absolute; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
         <div style=" font-size: 16px; font-family: Raleway, sans-serif; font-weight: 400; word-wrap: break-word">
@@ -368,5 +370,20 @@
     </script>
     </script>
 </body>
+<script>
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: 10.762536872673731, lng: 106.68232551166415 }, 
+            zoom: 12 
+        });
+
+        var marker = new google.maps.Marker({
+            position: { lat: 10.762536872673731, lng: 106.68232551166415 }, 
+            map: map, 
+            title: 'Địa điểm' 
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeOS7IcZeQdZrFqQOWnddYHwki4xDCCBI&callback=initMap"></script>></script>
 
 </html>
